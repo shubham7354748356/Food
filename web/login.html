@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="login.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+        
+        body {
+            background-image: url(bg8.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+
+
+</head>
+
+<body class="pt-5">
+
+    <div class="container col-lg-4 col-sm-12 bg-dark  text-warning">
+        <div class="text-center"><img src="login icon.png" style="height:80px; width: 80px;"></div>
+        <h2 class="text-danger text-center">Login</h2>
+        <hr> Enter UserName:<input type="text" class="col-lg-12 form-control" autofocus id="username">
+        <br> Enter Password
+        <input type="password" class="col-lg-12  form-control mb-3" id="password">
+
+
+        <div class="mb-3 col-lg-12"> <input type="checkbox" checked id="checkbox">Agree For All Terms And Conditions.....</div>
+
+        <button class="btn btn-success col-lg-12 mb-3" onclick="loginFunction()">Login</button>
+        <div class="text-white text-center"><a href="signup.html" class="text-white">New User/Sign Up</a></div>
+
+
+
+
+
+
+    </div>
+
+
+
+   
+    <script src="Jquery.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+</body>
+
+</html>

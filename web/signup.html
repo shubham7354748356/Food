@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="signup.js"></script>
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+        
+        body {
+            background-image: url(bg8.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+
+</head>
+
+<body class=" pt-5">
+    <div class="container  bg-dark text-warning col-lg-4">
+        <div class="text-center"><img src="login icon.png" style="height:80px; width: 80px;"></div>
+        <h2 class="text-center text-danger">Sign Up:</h2>
+        <hr> Enter UserName You Wanna Create:
+        <input type="text" class="form-control col-lg-12 mb-3" autofocus id="username"> Enter Password:
+        <input type="password" class="form-control col-lg-12 mb-3" id="password"> Select State:
+        <select class="form-control mb-3" id="state" onchange="getTheStates()">
+            <option value="Mp">MP</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Goa">Goa</option>
+            <option value="Up"> UP</option>
+
+        </select> Select City:
+        <select class="form-control mb-3" id="city">
+            <option value="Bhopal">Bhopal</option>
+        </select> Select User Type:
+        <select class="form-control mb-3" id="usertype">
+            <option value="Customer">Customer</option>
+            <option value="Supplier">Supplier</option>
+        </select>
+        <div class="mb-3"><input type="checkbox" checked id="checked">Agree For All Terms And Conditions.....</div>
+        <button class="btn btn-success col-lg-12 mb-3" onclick="signup()">Sign Up</button>
+        <div class=" text-white text-center"><a class="text-white mb-3" href="login.html">Already Have An Account/Login</a></div>
+
+
+
+
+    </div>
+
+
+    <script src="Jquery.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
